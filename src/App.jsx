@@ -38,12 +38,14 @@ function App() {
       <nav>
         <p className='navigator backgr'
           onClick={() => {setShowing(1)}}
+          style={showing === 1 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
         >
           My background
         </p>
 
         <p className='navigator teach'
           onClick={() => {setShowing(2)}}
+          style={showing === 2 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
         >
           Teaching
         </p>
@@ -57,12 +59,14 @@ function App() {
 
         <p className='navigator gallery'
           onClick={() => {setShowing(3)}}
+          style={showing === 3 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
         >
           Gallery
         </p>
 
         <p className='navigator contact'
           onClick={() => {setShowing(4)}}
+          style={showing === 4 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
         >
           Contact
         </p>
@@ -72,11 +76,10 @@ function App() {
         {
           renderSwitch(showing)
         }
+        <footer>
+          © 2024 Konrad Dominik Vincler
+        </footer>
       </div>
-
-      <footer>
-        © 2024 Konrad Dominik Vincler
-      </footer>
     </>
   )
 }

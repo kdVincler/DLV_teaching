@@ -1,0 +1,8 @@
+.background #hr {
+    border-top: 3px solid var(--headercolour);
+    padding-top: 0.83rem;
+}
+
+.background h1 {
+    font-family: var(--highlightedtext);
+}

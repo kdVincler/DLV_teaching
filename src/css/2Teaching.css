@@ -1,0 +1,15 @@
+.teaching {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.teaching img{
+    width: 30vw;
+}
+
+.teaching figcaption {
+    font-size: small;
+    text-align: center;
+}
