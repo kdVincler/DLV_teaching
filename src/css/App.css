@@ -7,6 +7,16 @@
   --normaltext: Arial, Helvetica, sans-serif; /* TODO */
   --highlightedtext: 'Times New Roman', Times, serif;  /* TODO */
 
+  /* contact form */
+  --bordercolour: black; /* TODO */
+  --focuscolour: red; /* TODO */
+  --fieldbackgroundcolour: lightgray; /* TODO */
+
+  --submitcolour: blue; /* TODO */
+  --submittextcolour: white; /* TODO */
+
+  --placeholderfont: Arial, Helvetica, sans-serif; /* TODO */
+  --placeholdertextcolour: grey; /* TODO */
 }
 
 /* needed for height to match viewport */

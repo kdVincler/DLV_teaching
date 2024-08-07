@@ -35,28 +35,15 @@ function Contact() {
                     Contact me
                 </h1>
                 <form ref={form} onSubmit={sendEmail}>
-                    <div className="field">
-                        <label>Name</label> <br />
-                        <input type="text" name="user_name" placeholder='Enter your name'/>
-                    </div>
-                    <div className="field">
-                        <label>Email</label> <br />
-                        <input type="email" name="user_email" placeholder='Enter your email address'/>
-                    </div>
-                    <div className="field">
-                        <label>Subject</label> <br />
-                        <input type="text" name="subject" placeholder="Enter your email's subject"/>
-                    </div>
-                    <div className="field">
-                        <label>Message</label> <br />
-                        <textarea name="message" placeholder='Enter your message'/>
-                    </div>
-                    <input type="submit" value="Send" />
+                    <input className='input' type="text" name="user_name" placeholder='Your name*' required/>
+                    <input className='input' type="email" name="user_email" placeholder='Email*' required/>
+                    <input className='input' type="text" name="sname" placeholder="The student's name*" required/>
+                    <textarea className='input' name="message" placeholder='Your message*' required/>
+                    <input type="submit" value="SEND" />
                 </form>
             </section>
             
         </>
-        
     );
 }
 

@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 .contact h1 {
     text-align: center;
     font-family: var(--highlightedtext);
@@ -9,15 +11,62 @@
     align-items: center;
 }
 
-.contact form .field{
-    width: 80%;
-    margin-bottom: 1%;
+.contact form .input, [type="submit"]{
+    width: 90%;
+    margin-bottom: 15px;
 }
 
-.contact form .field input, .contact form .field textarea{
-    width: 100%;
+
+/* 
+    source: https://codepen.io/ZachSaucier/pen/jOwNvO?editors=1100
+    found on: freefrontend.com
+*/
+.contact .input {
+    color:var(--textcolour);
+    font-family: var(--placeholderfont);
+    font-weight:500;
+    font-size: 18px;
+    border-radius: 5px;
+    line-height: 22px;
+    background-color: var(--fieldbackgroundcolour);
+    border:2px solid var(--bordercolour);
+    transition: all 0.3s;
+    padding: 13px;
+    margin-bottom: 15px;
+    width:100%;
+    box-sizing: border-box;
+    outline:0;
+
+    box-shadow: 2px 2px 5px 4px var(--bordercolour);
 }
 
-.contact form .field textarea {
-    height: 150px;
+.contact .input:focus { 
+    border:2px solid var(--focuscolour);
+    box-shadow: 2px 2px 5px 4px var(--focuscolour);
 }
+
+.contact .input::placeholder {
+    font-family: var(--placeholderfont);
+    color: var(--placeholdertextcolour);
+}
+
+.contact textarea {
+    height: 130px;
+    line-height: 150%;
+    resize:vertical;
+}
+
+[type="submit"] {
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    background: var(--submitcolour);
+    border-radius:5px;
+    border:0;
+    cursor:pointer;
+    color: var(--submittextcolour);
+    font-size:24px;
+    padding-top:10px;
+    padding-bottom:10px;
+    transition: all 0.3s;
+    font-weight:700;
+}
+[type="submit"]:hover { background: var(--focuscolour); }
