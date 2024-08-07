@@ -10,6 +10,11 @@ import Contact from './components/4Contact';
 
 function App() {
   const [showing, setShowing] = useState(0);
+  const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+  function toggleHamburger() {
+    setHamburgerOpen(!hamburgerOpen);
+  }
 
   useEffect(() => {
     document.title = "Doroti Vincler"
@@ -34,42 +39,58 @@ function App() {
 
   return (
     <>
-      {/* Navbar */}
+      {/* 
+        navbar design from: https://khuang159.medium.com/creating-a-hamburger-menu-in-react-f22e5ae442cb
+      */}
       <nav>
-        <p className='navigator backgr'
-          onClick={() => {setShowing(1)}}
-          style={showing === 1 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
+        <h2 className='almostlogo'
+          onClick={() => {setShowing(0); setHamburgerOpen(false)}}
         >
-          My background
-        </p>
+          Doroti Vincler
+        </h2>
 
-        <p className='navigator teach'
-          onClick={() => {setShowing(2)}}
-          style={showing === 2 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
-        >
-          Teaching
-        </p>
+        <ul>
+          <li className='navigator backgr'
+            onClick={() => {setShowing(1); setHamburgerOpen(false)}}
+            style={showing === 1 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
+          >
+            My background
+          </li>
 
-        <p className='navigator almostlogo'
-          onClick={() => {setShowing(0)}}
-        >
-          <b>Doroti</b>
-          <b>Vincler</b>
-        </p>
+          <li className='navigator teach'
+            onClick={() => {setShowing(2); setHamburgerOpen(false)}}
+            style={showing === 2 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
+          >
+            Teaching
+          </li>
 
-        <p className='navigator gallery'
-          onClick={() => {setShowing(3)}}
-          style={showing === 3 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
-        >
-          Gallery
-        </p>
+          <li className='navigator gallery'
+            onClick={() => {setShowing(3); setHamburgerOpen(false)}}
+            style={showing === 3 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
+          >
+            Gallery
+          </li>
 
-        <p className='navigator contact'
-          onClick={() => {setShowing(4)}}
-          style={showing === 4 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
-        >
-          Contact
-        </p>
+          <li className='navigator contact'
+            onClick={() => {setShowing(4); setHamburgerOpen(false)}}
+            style={showing === 4 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
+          >
+            Contact
+          </li>
+        </ul>
+        <style>{`
+          @media (max-width: 1024px){
+            nav ul {
+              display: ${hamburgerOpen ? 'inline' : 'none'};
+            }
+          }
+        `}</style>
+
+        <div className="hamburger" onClick={toggleHamburger}>
+          <div className="burger burger1"></div>
+          <div className="burger burger2"></div>
+          <div className="burger burger3"></div>
+        </div>
       </nav>
       
       <div className="container">

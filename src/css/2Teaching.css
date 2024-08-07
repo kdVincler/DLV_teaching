@@ -1,15 +1,17 @@
 .teaching {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     align-items: center;
+
+    font-size: 20px;
+}
+
+.teaching figure {
+    text-align: center;
 }
 
 .teaching img{
-    width: 30vw;
+    width: 80%;
 }
 
 .teaching figcaption {
-    font-size: small;
-    text-align: center;
+    font-size: medium;
 }
