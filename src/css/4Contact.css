@@ -28,7 +28,7 @@
     font-weight:500;
     font-size: 18px;
     border-radius: 5px;
-    line-height: 22px;
+    line-height: 20px;
     background-color: var(--fieldbackgroundcolour);
     border:2px solid var(--bordercolour);
     transition: all 0.3s;
@@ -52,7 +52,7 @@
 }
 
 .contact textarea {
-    height: 130px;
+    height: 110px;
     line-height: 150%;
     resize:vertical;
 }
