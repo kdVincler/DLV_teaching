@@ -169,4 +169,9 @@ footer {
   }
 }
 
+/* from: https://elementor.com/blog/css-fade-in/?utm_source=google&utm_medium=cpc&utm_campaign=13060922353&utm_term=&lang=&gad_source=1&gclid=EAIaIQobChMIjszM4MjnhwMVlpCDBx3RGgilEAAYASAAEgIdLvD_BwE */
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
