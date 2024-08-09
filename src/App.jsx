@@ -83,9 +83,7 @@ function App() {
             nav ul {
               /* display: ${hamburgerOpen ? 'inline' : 'none'}; */
               /* from: https://elementor.com/blog/css-fade-in/?utm_source=google&utm_medium=cpc&utm_campaign=13060922353&utm_term=&lang=&gad_source=1&gclid=EAIaIQobChMIjszM4MjnhwMVlpCDBx3RGgilEAAYASAAEgIdLvD_BwE */
-              display: inline;
-              opacity: 0;
-              ${hamburgerOpen ? 'animation: fadeIn 0.3s ease-in; opacity: 1;' : ''}
+              ${hamburgerOpen ? 'display: inline; animation: fadeIn 0.3s ease-in; opacity: 1;' : 'display: none;'}
             }
             .burger1 {
               transform: ${hamburgerOpen ? 'rotate(45deg)' : 'rotate(0)'};
