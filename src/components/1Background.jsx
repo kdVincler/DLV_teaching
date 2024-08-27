@@ -9,6 +9,11 @@ import 'react-vertical-timeline-component/style.min.css';
 import '../css/1Background.css'
 
 function Background() {
+    /* 
+        Source of timeline design:
+        https://stackblitz.com/edit/react-q23ymd?file=src%2FApp.js
+        https://www.npmjs.com/package/react-vertical-timeline-component
+    */
     const timeline_education = [
         {
             icon: { iconStyle: { background: '#f07167' } },
