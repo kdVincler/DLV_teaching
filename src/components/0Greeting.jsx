@@ -8,10 +8,10 @@ function Greeting() {
         <section className="tile greeting">
             <div className="text">
                 <h1>
-                    Welcome to my website.
+                    Flute & Piccolo
                 </h1>
                 <p>
-                    My name is Doroti Vincler and I am a music teacher for flute, recorder and music theory.
+                    Doroti is a freelance flautist and highly experienced music teacher for flute, recorder and music theory.
                 </p>
                 
             </div>

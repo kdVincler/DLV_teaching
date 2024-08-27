@@ -13,6 +13,7 @@
 .greeting .text {
     width: 50%;
     padding-left: 10px;
+    font-size: var(--textsize)
 }
 
 .greeting figure {
@@ -25,12 +26,18 @@
 
 .greeting img {
     width: 70%;
+    border-radius: 50px;
 }
 
 @media (max-width: 1024px){
     .greeting {
         flex-direction: column-reverse;
-        overflow: hidden;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .greeting .text {
+        width: 100%;
     }
 
     .greeting img {

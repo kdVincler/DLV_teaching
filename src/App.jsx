@@ -54,7 +54,7 @@ function App() {
             onClick={() => {setShowing(1); setHamburgerOpen(false)}}
             style={showing === 1 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
           >
-            My background
+            My Background
           </li>
 
           <li className='navigator teach'
@@ -94,6 +94,9 @@ function App() {
             }
             .burger3 {
               transform: ${hamburgerOpen ? 'rotate(-45deg)' : 'rotate(0)'};
+            }
+            nav {
+              ${hamburgerOpen ? 'border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;' : 'border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;'}
             }
           }
         `}</style>

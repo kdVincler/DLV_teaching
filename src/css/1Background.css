@@ -6,3 +6,18 @@
 .background h1 {
     font-family: var(--highlightedtext);
 }
+
+.vertical-timeline-element-title {
+    font-size: 28px !important;
+    font-weight: bolder !important;
+    font-family: var(--highlightedtext) !important;
+}
+
+.vertical-timeline-element-subtitle {
+    font-size: 25px !important;
+    font-family: var(--highlightedtext) !important;
+}
+
+.vertical-timeline-element-date {
+    font-size: 25px !important;
+}

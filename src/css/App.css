@@ -1,28 +1,29 @@
- /* variables */
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Great+Vibes&display=swap');
+/* variables */
 
 :root{
-	--textcolour: black; /* TODO */
-  --tilecolour: #eeaeca; /* TODO */
-  --headercolour: #94bbe9; /* TODO */
-  --normaltext: Arial, Helvetica, sans-serif; /* TODO */
-  --highlightedtext: 'Times New Roman', Times, serif;  /* TODO */
+  --textsize: 30px;
+	--textcolour: black;
+  --tilecolour: #FFE5D9; /* FFE5D9 */
+  --headercolour: #f07167; /* #f27e71 */
+  --normaltext: "Caudex", serif;
+  --highlightedtext: var(--normaltext);
 
   /* contact form */
-  --bordercolour: black; /* TODO */
-  --focuscolour: red; /* TODO */
-  --fieldbackgroundcolour: lightgray; /* TODO */
+  --bordercolour: black;
+  --focuscolour: #ff9068;
+  --fieldbackgroundcolour: white;
 
-  --submitcolour: blue; /* TODO */
-  --submittextcolour: white; /* TODO */
+  --submitcolour: var(--headercolour);
+  --submittextcolour: white;
 
-  --placeholderfont: Arial, Helvetica, sans-serif; /* TODO */
-  --placeholdertextcolour: grey; /* TODO */
+  --placeholderfont: var(--normaltext);
+  --placeholdertextcolour: grey;
 }
 
 /* needed for height to match viewport */
 body, html {
   height: 100%;
-  font-size: 20px;
 }
 
 #root {
@@ -34,13 +35,13 @@ body, html {
   position: relative;
   overflow-y: hidden;
 
-  /*  from cssgradient.io */
-  /* option 1
-  background: rgb(238,174,202);
-  background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%); */
-  /* option 2 */
-  background: rgb(63,94,251);
-  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+  /*  used cssgradient.io */
+  /*
+  background: rgb(247,178,183);
+  background: radial-gradient(circle, rgba(247,178,183,1) 51%, rgba(254,217,183,1) 100%);
+  */
+  background: rgb(254,211,178);
+  background: linear-gradient(20deg, rgba(254,211,178,1) 8%, rgba(253,204,173,1) 32%, rgba(244,139,123,1) 80%);
 } 
 
 body {
@@ -55,13 +56,24 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-size: x-large;
+  font-size: var(--textsize);
+  box-shadow: 0px 0px 8px 2px black;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .almostlogo {
-  font-family: var(--highlightedtext);
+  font-family: "Great Vibes", cursive;
   flex-grow: 2;
+  font-size: 40px;
+  line-height: 150%;
   padding-left: 30px;
+}
+
+/* to fix "Display zoom: Larger Text" issue on iphones */
+h1 {
+  font-size: 35px;
+  line-height: 150%;
 }
 
 nav ul {
@@ -98,7 +110,7 @@ nav ul li {
 
 .tile {
   background-color: var(--tilecolour);
-  width: 60%;
+  width: 80%;
   max-height: 75vh;
   margin-top: 5vh;
   padding: 10px;
@@ -111,11 +123,12 @@ nav ul li {
 
 /* footer styling */
 footer {
-  color: white;
+  color: black;
   position: absolute;
   bottom: 0;
   width: 100%;
-  font-size: smaller;
+  font-size: x-small;
+  font-weight: bold;
   text-align: center;
 }
 
@@ -151,9 +164,10 @@ footer {
 
   nav ul {
     background-color: var(--headercolour);
+    font-size: 35px;
     height: 100vh;
-    width: 50vw;
-    top: 5vh;
+    width: 100vw;
+    top: 3vh;
     left: 0;
     padding-top: 20px;
     position: absolute;

@@ -1,5 +1,5 @@
 .teaching {
-    align-items: center;
+    font-size: var(--textsize);
 }
 
 .teaching figure {
@@ -11,11 +11,15 @@
 }
 
 .teaching figcaption {
-    font-size: medium;
+    font-size: large;
 }
 
 @media (max-width: 1024px){
     .teaching img {
         width: 100%;
+    }
+
+    .teaching {
+        font-size: 25px;
     }
 }

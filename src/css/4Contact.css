@@ -3,6 +3,7 @@
 .contact h1 {
     text-align: center;
     font-family: var(--highlightedtext);
+    margin-top: 3px;
 }
 
 .contact form {
@@ -30,7 +31,7 @@
     border-radius: 5px;
     line-height: 20px;
     background-color: var(--fieldbackgroundcolour);
-    border:2px solid var(--bordercolour);
+    border:1px solid var(--bordercolour);
     transition: all 0.3s;
     padding: 13px;
     margin-bottom: 15px;
@@ -56,18 +57,24 @@
     line-height: 150%;
     resize:vertical;
 }
-
+     
 [type="submit"] {
-    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-    background: var(--submitcolour);
-    border-radius:5px;
-    border:0;
-    cursor:pointer;
-    color: var(--submittextcolour);
-    font-size:24px;
-    padding-top:10px;
-    padding-bottom:10px;
-    transition: all 0.3s;
-    font-weight:700;
+    background-image: linear-gradient(to right, #fd746c 0%, #ff9068  51%, #fd746c  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
 }
-[type="submit"]:hover { background: var(--focuscolour); }
+
+[type="submit"]:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+ 
