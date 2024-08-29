@@ -54,7 +54,7 @@ function App() {
             onClick={() => {setShowing(1); setHamburgerOpen(false)}}
             style={showing === 1 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
           >
-            My Background
+            About me
           </li>
 
           <li className='navigator teach'

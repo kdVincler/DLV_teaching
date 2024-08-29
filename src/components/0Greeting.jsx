@@ -11,7 +11,7 @@ function Greeting() {
                     Flute & Piccolo
                 </h1>
                 <p>
-                    Doroti is a freelance flautist and highly experienced music teacher for flute, recorder and music theory.
+                    Doroti is a freelance flautist and highly experienced music teacher of flute, recorder and music theory based in London.
                 </p>
                 
             </div>

@@ -2,6 +2,12 @@
     font-size: var(--textsize);
 }
 
+.teaching .text {
+    text-align: justify;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
 .teaching figure {
     text-align: center;
 }
@@ -14,9 +20,21 @@
     font-size: large;
 }
 
+.teaching #sales_pitch{
+    text-align: center;
+}
+
 @media (max-width: 1024px){
+    .teaching .text {
+        text-align: left;
+    }
+
     .teaching img {
         width: 100%;
+    }
+
+    .teaching figcaption {
+        font-size: medium;
     }
 
     .teaching {
