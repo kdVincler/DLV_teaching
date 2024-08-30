@@ -1,4 +1,64 @@
 .gallery h1 {
-    text-align: center;
     font-family: var(--highlightedtext);
+}
+
+.gallery .text {
+    font-size: var(--textsize);
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.gallery .nothingToDisplay {
+    text-align: center;
+}
+
+.gallery .photoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery .photoContainer img {
+    max-height: 20rem;
+    max-width: 100%;
+    padding: 10px;
+}
+
+
+/* from: https://www.npmjs.com/package/react-player - Responsive player*/
+
+.gallery .videoContainer .player-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* Player ratio: 100 / (1280 / 720) */
+}
+
+.gallery .videoContainer .react-player {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.gallery .audioContainer figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery .audioContainer img{
+    max-height: 15rem;
+    max-width: 100%;
+    padding: 10px;
+}
+
+.gallery .audioContainer figcaption {
+    font-size: medium;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 1024px){
+    .gallery .audioContainer figure {
+        flex-direction: column;
+    }
 }

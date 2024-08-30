@@ -83,7 +83,7 @@ function Background() {
                     <br />
                     After starting the flute at the age of nine, I was accepted to the Zoltan Kodaly Secondary Music School in Hungary, before moving to London and completing my Bachelors degree (BMus Hons) at the Royal Academy of Music and a Master of Performance degree in Classical Flute Performance with Distinction at the Royal College of Music.
                 </section>
-                <h1 id='hr'>
+                <h1 className='hr'>
                     RECENT PERFORMANCES
                 </h1>
                 <section>
@@ -92,7 +92,7 @@ function Background() {
                         <li>charlie</li>
                     </ul>
                 </section>
-                <h1 id='hr'>
+                <h1 className='hr'>
                     TEACHING
                 </h1>
                 <section>
@@ -102,7 +102,7 @@ function Background() {
                         <li>Camden Music Service</li>
                     </ul>
                 </section>
-                <h1 id='hr'>
+                <h1 className='hr'>
                     EDUCATION
                 </h1>
                 <article>
@@ -132,7 +132,7 @@ function Background() {
                     </VerticalTimeline>
                 </article>
 
-                <h1 id='hr'>
+                <h1 className='hr'>
                     AWARDS & SCHOLARSHIPS
                 </h1>
                 <article>

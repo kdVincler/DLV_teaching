@@ -76,6 +76,11 @@ h1 {
   line-height: 150%;
 }
 
+.hr {
+  border-top: 3px solid var(--headercolour);
+  padding-top: 0.83rem;
+}
+
 nav ul {
   display: flex;
   flex-wrap: wrap;

@@ -3,21 +3,12 @@
     padding-right: 1vw;
 }
 
-.background #hr {
-    border-top: 3px solid var(--headercolour);
-    padding-top: 0.83rem;
-}
-
 .background h1 {
     font-family: var(--highlightedtext);
 }
 
 .background section {
     font-size: var(--textsize);
-}
-
-.background .bio {
-    text-align: justify;
 }
 
 .vertical-timeline-element-title {
@@ -33,10 +24,4 @@
 
 .vertical-timeline-element-date {
     font-size: 25px !important;
-}
-
-@media (max-width: 1024px){
-    .background .bio {
-        text-align: left;
-    }
 }

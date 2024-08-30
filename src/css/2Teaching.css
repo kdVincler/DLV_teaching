@@ -3,7 +3,6 @@
 }
 
 .teaching .text {
-    text-align: justify;
     padding-left: 1vw;
     padding-right: 1vw;
 }
@@ -25,10 +24,6 @@
 }
 
 @media (max-width: 1024px){
-    .teaching .text {
-        text-align: left;
-    }
-
     .teaching img {
         width: 100%;
     }

@@ -20,7 +20,7 @@ function Teaching() {
                 I am an experienced & dedicated teacher and am passionate about providing quality and engaging music education to my students regardless of their age, background or level of playing. 
                 <br />
                 <br />
-                I hold a Bachelors degree (BMus Hons) from the Royal Academy of Music and a Master of Performance degree with Distinction from the Royal Collage of Music in Classical Flute Performance as well as an LRAM diploma in teaching and pedagogical theory from the Royal Academy of Music. 
+                I hold a Bachelors degree (BMus Hons) from the Royal Academy of Music and a Master of Performance degree with Distinction from the Royal College of Music in Classical Flute Performance as well as an LRAM diploma in teaching and pedagogical theory from the Royal Academy of Music. 
                 <br />
                 <br />
                 Besides teaching privately in London, I am also the flute & recorder teacher at Seaton House Preparatory School, Kew Green Prep School and the Camden Music Service's Saturday Centre.
