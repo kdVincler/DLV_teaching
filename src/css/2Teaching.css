@@ -23,6 +23,11 @@
     text-align: center;
 }
 
+.teaching #sales_pitch u:hover{
+    cursor: pointer;
+    color: var(--headercolour);
+}
+
 @media (max-width: 1024px){
     .teaching img {
         width: 100%;

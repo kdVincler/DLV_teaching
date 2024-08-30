@@ -1,7 +1,7 @@
 import '../css/2Teaching.css'
 import teaching from '../assets/teaching.png'
 
-function Teaching() {
+function Teaching({redirect}) {
     return(
     <>
         {/* teaching not done yet 
@@ -42,7 +42,7 @@ function Teaching() {
                 <br />
                 I have been trained from age seven by the most respected Kodaly pedagogues in Hungary, so I know from first-hand experience how beneficial the early cultivation of good aural skills is for an instrumentalist. My knowledge of Kodály solfege allows me to train my pupils' rhythmic skills and musical timing in a unique way that encourages them to focus on instant rhythmic accuracy.
                 <h1 id='sales_pitch'>
-                    Contact for private lesson availability or to book a workshop.
+                    <u onClick={() => {redirect(4)}}>Contact</u> for private lesson availability or to book a workshop.
                 </h1>
             </div>
         </section>

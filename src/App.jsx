@@ -27,7 +27,7 @@ function App() {
       case 1:
         return <Background />;
       case 2:
-        return <Teaching />;
+        return <Teaching redirect={setShowing}/>;
       case 3:
         return <Gallery />;
       case 4:
