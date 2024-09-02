@@ -19,11 +19,11 @@
     font-size: large;
 }
 
-.teaching #sales_pitch{
+.teaching #redirect {
     text-align: center;
 }
 
-.teaching #sales_pitch u:hover{
+.teaching #redirect u:hover{
     cursor: pointer;
     color: var(--headercolour);
 }

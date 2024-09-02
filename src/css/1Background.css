@@ -11,6 +11,10 @@
     font-size: var(--textsize);
 }
 
+.background section li{
+    margin-top: 2vh;
+}
+
 .vertical-timeline-element-title {
     font-size: 28px !important;
     font-weight: bolder !important;
