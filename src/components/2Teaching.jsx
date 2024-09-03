@@ -1,17 +1,9 @@
 import '../css/2Teaching.css'
-import teaching from '../assets/teaching.png'
+import teaching from '../assets/teaching.jpg'
 
 function Teaching({redirect}) {
     return(
     <>
-        {/* teaching not done yet 
-            first 2 paragraph (above picture originally):
-                I am an experienced and passionate teacher with an LRAM diploma in teaching and pedagogical theory from the Royal Academy of Music. 
-                <br />
-                <br />
-                I am a professional flautist based in London as well as the flute & recorder teacher at Seaton House Preparatory School, Kew Green Prep School and the Camden Music Service's Saturday Centre.
-        
-        */}
         <section className="tile teaching">
             <div className="text">
                 <h1>

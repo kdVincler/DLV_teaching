@@ -2,15 +2,15 @@ import '../css/3Gallery.css'
 import ReactPlayer from 'react-player'
 
 /* photo imports */
-import teaching from '../assets/gallery/photos/teaching.png'
-import photo2 from '../assets/gallery/photos/IMG_7083.png'
-import photo3 from '../assets/gallery/photos/Screenshot.png'
-import photo4 from '../assets/gallery/photos/IMG_1544.png'
-import photo5 from '../assets/gallery/photos/8103.png'
-import photo6 from '../assets/gallery/photos/IMG_1184.jpg'
-import photo7 from '../assets/gallery/photos/IMG_6962.png'
-import photo8 from '../assets/gallery/photos/photo8.png'
-import photo9 from '../assets/gallery/photos/IMG_1121.png'
+import teaching from '../assets/gallery/photos/teaching.jpg'
+import photo2 from '../assets/gallery/photos/IMG_7083.jpg'
+import photo3 from '../assets/gallery/photos/Screenshot.jpg'
+import photo4 from '../assets/gallery/photos/IMG_1544.jpg'
+import photo5 from '../assets/gallery/photos/8103.jpg'
+import photo6 from '../assets/gallery/photos/IMG_1184.jpeg'
+import photo7 from '../assets/gallery/photos/IMG_6962.jpg'
+import photo8 from '../assets/gallery/photos/photo8.jpg'
+import photo9 from '../assets/gallery/photos/IMG_1121.jpeg'
 
 /* audio imports */
 
