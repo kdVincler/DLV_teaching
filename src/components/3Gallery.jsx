@@ -1,8 +1,10 @@
 import '../css/3Gallery.css'
 import ReactPlayer from 'react-player'
 
+import { useState } from 'react';
+
 /* photo imports */
-import teaching from '../assets/gallery/photos/teaching.jpg'
+import teaching from '../assets/teaching.jpg'
 import photo2 from '../assets/gallery/photos/IMG_7083.jpg'
 import photo3 from '../assets/gallery/photos/Screenshot.jpg'
 import photo4 from '../assets/gallery/photos/IMG_1544.jpg'
@@ -73,9 +75,33 @@ function Gallery() {
         //     albumCoverAlt: `alt text for album cover`
         // },
     ]
+
+    const [showPopup, setShowPopup] = useState(false)
+    const [imgPopup, setImgPopup] = useState(0)
+
+    function GalleryPopup() {
+        {
+            return(
+                photos.length && (
+                    <div className="popup" onClick={() => {setShowPopup(!showPopup); setImgPopup(0)}}>
+                        <img className='popupImg' src={photos[imgPopup].file} alt={photos[imgPopup].alt_Text} />
+                    </div>
+                )
+            )
+        }
+            
+    }
+
     return(
     <>
         {/* gallery not done yet */}
+        <style>
+            {`
+                .gallery .popup {
+                    visibility: ${showPopup ? `visible` : `hidden`}
+                }
+            `}
+        </style>
         <section className="tile gallery">
             <div className="text">
                 <h1>
@@ -84,9 +110,13 @@ function Gallery() {
                 <section className='photoContainer'>
                     {
                         photos.length ? (
-                            photos.map((photo) => {
+                            photos.map((photo, i) => {
                                 return(
-                                    <img src={photo.file} alt={photo.alt_Text} />
+                                    <img src={photo.file} alt={photo.alt_Text}
+                                    key={i} onClick={ () => {
+                                        setShowPopup(!showPopup); 
+                                        setImgPopup(i)
+                                    }}/>
                                 )
                             }) 
                         ) : (
@@ -95,6 +125,7 @@ function Gallery() {
                             </h1>
                         )
                     }
+                    <GalleryPopup />
                 </section>
                 <h1 className='hr'>
                     Videos
