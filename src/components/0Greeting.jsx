@@ -8,7 +8,7 @@ function Greeting() {
         <section className="tile greeting">
             <div className="text">
                 <h1>
-                    Flute & Piccolo
+                    Flautist & Teacher
                 </h1>
                 <p>
                     Doroti is a freelance flautist and highly experienced music teacher of flute, recorder and music theory based in London.
