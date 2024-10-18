@@ -7,12 +7,18 @@ import { useState } from 'react';
 import teaching from '../assets/teaching.jpg'
 import photo2 from '../assets/gallery/photos/IMG_7083.jpg'
 import photo3 from '../assets/gallery/photos/Screenshot.jpg'
-import photo4 from '../assets/gallery/photos/IMG_1544.jpg'
-import photo5 from '../assets/gallery/photos/8103.jpg'
-import photo6 from '../assets/gallery/photos/IMG_1184.jpeg'
-import photo7 from '../assets/gallery/photos/IMG_6962.jpg'
-import photo8 from '../assets/gallery/photos/photo8.jpg'
-import photo9 from '../assets/gallery/photos/IMG_1121.jpeg'
+import photo5 from '../assets/gallery/photos/Headshot.jpeg'
+import photo6 from '../assets/gallery/photos/IMG_1121.jpeg'
+import photo7 from '../assets/gallery/photos/image00016.jpg'
+import photo8 from '../assets/gallery/photos/image00008.jpeg'
+import photo9 from '../assets/gallery/photos/image00021.jpeg'
+import photo10 from '../assets/gallery/photos/image00010.jpg'
+import photo11 from '../assets/gallery/photos/image00015.jpeg'
+import photo12 from '../assets/gallery/photos/image00001.jpeg'
+import photo13 from '../assets/gallery/photos/image00014.jpeg'
+import photo14 from '../assets/gallery/photos/image00023.jpg'
+import photo15 from '../assets/gallery/photos/image00007.jpg'
+
 
 /* audio imports */
 
@@ -24,41 +30,60 @@ function Gallery() {
         //     alt_Text: `alt text`
         // },
         {
-            file: photo9,
+            file: photo7,
+            alt_Text: `Doroti at Canary Wharf posing with her flute` 
+        },
+        {
+            file: photo6,
             alt_Text: `Doroti playing the flute` 
+        },
+        {
+            file: photo8,
+            alt_Text: `Doroti at Canary Wharf posing with her flute` 
         },
         {
             file: teaching,
             alt_Text: `Doroti leading her students in performing at the Royal Albert Hall` 
         },
         {
+            file: photo9,
+            alt_Text: `Doroti at Canary Wharf posing with her flute` 
+        },
+        {
+            file: photo10,
+            alt_Text: `Doroti at Canary Wharf posing with her flute` 
+        },
+        {
+            file: photo11,
+            alt_Text: `Doroti at Canary Wharf posing with her flute` 
+        },
+        {
+            file: photo13,
+            alt_Text: `Doroti at Canary Wharf posing with her flute` 
+        },
+        {
+            file: photo12,
+            alt_Text: `Doroti at Canary Wharf posing with her flute` 
+        },
+        {
+            file: photo15,
+            alt_Text: `Doroti at Canary Wharf posing with her flute` 
+        },
+        {
             file: photo2,
             alt_Text: `Black and white photo of Doroti playing at Ronnie Scott's Jazz CLub in London` 
         },
-        
         {
-            file: photo5,
-            alt_Text: `Doroti in studio with her flute` 
+            file: photo14,
+            alt_Text: `Doroti at Canary Wharf posing with her flute` 
         },
         {
             file: photo3,
             alt_Text: `Doroti playing in orchestra` 
         },
         {
-            file: photo6,
-            alt_Text: `Doroti in Greenwitch with her flute` 
-        },
-        {
-            file: photo4,
-            alt_Text: `Doroti playing with Szabolcs Philharmonics Orchestra` 
-        },
-        {
-            file: photo8,
-            alt_Text: `Doroti in front of the Royal Collage of Music with her flute` 
-        },
-        {
-            file: photo7,
-            alt_Text: `Doroti playing the flute` 
+            file: photo5,
+            alt_Text: `Doroti posing with her flute in a photo studio` 
         },
     ]
     const videos = [
