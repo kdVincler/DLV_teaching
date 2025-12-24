@@ -152,7 +152,7 @@ function Gallery() {
                     }
                     <GalleryPopup />
                 </section>
-                <h1 className='hr'>
+                {/* <h1 className='hr'>
                     Videos
                 </h1>
                 <section className='videoContainer'>
@@ -208,7 +208,7 @@ function Gallery() {
                             </h1>
                         ) 
                     }
-                </section>
+                </section> */}
             </div>
         </section>
     </>
