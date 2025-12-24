@@ -12,7 +12,7 @@
     align-items: center;
 }
 
-.contact form .input, [type="submit"]{
+.contact form .input, [type="submit"], .secondButton{
     width: 90%;
     max-width: 500px;
     margin-bottom: 15px;
@@ -58,7 +58,7 @@
     resize:vertical;
 }
      
-[type="submit"] {
+[type="submit"], .secondButton {
     background-image: linear-gradient(to right, #fd746c 0%, #ff9068  51%, #fd746c  100%);
     margin: 10px;
     padding: 15px 45px;
@@ -72,7 +72,7 @@
     display: block;
 }
 
-[type="submit"]:hover {
+[type="submit"]:hover, .secondButton:hover {
     background-position: right center; /* change the direction of the change here */
     color: #fff;
     text-decoration: none;

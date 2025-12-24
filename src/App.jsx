@@ -51,7 +51,7 @@ function App() {
             </ul>
           </div>
           <a 
-            className="font-extrabold text-3xl font-[Great_Vibes] pl-4 md:text-4xl"
+            className="font-extrabold text-2xl font-[Great_Vibes] pl-4 md:text-4xl"
             onClick={() => {setShowing(0)}}
           >
               Doroti Vincler
