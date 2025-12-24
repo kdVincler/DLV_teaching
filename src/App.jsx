@@ -10,11 +10,6 @@ import Contact from './components/4Contact';
 
 function App() {
   const [showing, setShowing] = useState(0);
-  const [hamburgerOpen, setHamburgerOpen] = useState(false);
-
-  function toggleHamburger() {
-    setHamburgerOpen(!hamburgerOpen);
-  }
 
   useEffect(() => {
     document.title = "Doroti Vincler"
@@ -39,81 +34,53 @@ function App() {
 
   return (
     <>
-      {/* 
-        navbar design from: https://khuang159.medium.com/creating-a-hamburger-menu-in-react-f22e5ae442cb
-      */}
-      <nav>
-        <h2 className='almostlogo'
-          onClick={() => {setShowing(0); setHamburgerOpen(false)}}
-        >
-          Doroti Vincler
-        </h2>
-
-        <ul>
-          <li className='navigator backgr'
-            onClick={() => {setShowing(1); setHamburgerOpen(false)}}
-            style={showing === 1 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
+      {/* new reactive navbar design from daisyUI */}
+      <div className="navbar bg-(--headercolour) rounded-b-xl shadow-2xl">
+        <div className="navbar-start">
+          <div className="dropdown">
+            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+            </div>
+            {/* DROPDOWN */}
+            <ul
+              tabIndex="-1"
+              className="menu menu-sm dropdown-content bg-(--headercolour) rounded-box z-1 mt-3 w-52 p-2 shadow">
+              <li><a onClick={() => {setShowing(1)}}>About me</a></li>
+              <li><a onClick={() => {setShowing(2)}}>Teaching</a></li>
+              <li><a onClick={() => {setShowing(3)}}>Gallery</a></li>
+            </ul>
+          </div>
+          <a 
+            className="font-bold text-3xl font-[Great_Vibes] pl-4 md:text-4xl"
+            onClick={() => {setShowing(0)}}
           >
-            About me
-          </li>
-
-          <li className='navigator teach'
-            onClick={() => {setShowing(2); setHamburgerOpen(false)}}
-            style={showing === 2 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
-          >
-            Teaching
-          </li>
-
-          <li className='navigator gallery'
-            onClick={() => {setShowing(3); setHamburgerOpen(false)}}
-            style={showing === 3 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
-          >
-            Gallery
-          </li>
-
-          <li className='navigator contact'
-            onClick={() => {setShowing(4); setHamburgerOpen(false)}}
-            style={showing === 4 ? {"text-decoration": "underline", "text-underline-offset": "4px"} : (null) }
+              Doroti Vincler
+          </a>
+        </div>
+        <div className="navbar-center hidden lg:flex">
+          {/* NAVBAR */}
+          <ul className="menu menu-horizontal px-1">
+            <li><a onClick={() => {setShowing(1)}}>About me</a></li>
+            <li><a onClick={() => {setShowing(2)}}>Teaching</a></li>
+            <li><a onClick={() => {setShowing(3)}}>Gallery</a></li>
+          </ul>
+        </div>
+        <div className="navbar-end">
+          <a 
+            className="btn"
+            onClick={() => {setShowing(4)}}
           >
             Contact
-          </li>
-        </ul>
-        <style>{`
-          @media (max-width: 1024px){
-            nav ul {
-              /* display: ${hamburgerOpen ? 'inline' : 'none'}; */
-              /* from: https://elementor.com/blog/css-fade-in/?utm_source=google&utm_medium=cpc&utm_campaign=13060922353&utm_term=&lang=&gad_source=1&gclid=EAIaIQobChMIjszM4MjnhwMVlpCDBx3RGgilEAAYASAAEgIdLvD_BwE */
-              ${hamburgerOpen ? 'display: inline; animation: fadeIn 0.3s ease-in; opacity: 1;' : 'display: none;'}
-            }
-            .burger1 {
-              transform: ${hamburgerOpen ? 'rotate(45deg)' : 'rotate(0)'};
-            }
-            .burger2 {
-              // transform: ${hamburgerOpen ? 'translateX(100%)' : 'translateX(0)'};
-              opacity: ${hamburgerOpen ? 0 : 1}
-            }
-            .burger3 {
-              transform: ${hamburgerOpen ? 'rotate(-45deg)' : 'rotate(0)'};
-            }
-            nav {
-              ${hamburgerOpen ? 'border-bottom-right-radius: 0px; border-bottom-left-radius: 0px;' : 'border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;'}
-            }
-          }
-        `}</style>
-
-        <div className="hamburger" onClick={toggleHamburger}>
-          <div className="burger burger1"></div>
-          <div className="burger burger2"></div>
-          <div className="burger burger3"></div>
+          </a>
         </div>
-      </nav>
+      </div>
       
-      <div className="container">
+      <div className="mycontainer">
         {
           renderSwitch(showing)
         }
         <footer>
-          © 2024 Konrad Dominik Vincler
+          Copyright © {new Date().getFullYear()} - Konrad Vincler
         </footer>
       </div>
     </>
