@@ -4,23 +4,24 @@ import ReactPlayer from 'react-player'
 import { useState } from 'react';
 
 /* photo imports */
-import teaching from '../assets/teaching.jpg'
-import photo2 from '../assets/gallery/photos/IMG_7083.jpg'
-import photo3 from '../assets/gallery/photos/Screenshot.jpg'
-import photo5 from '../assets/gallery/photos/Headshot.jpeg'
-import photo6 from '../assets/gallery/photos/IMG_1121.jpeg'
-import photo7 from '../assets/gallery/photos/image00016.jpg'
-import photo8 from '../assets/gallery/photos/image00008.jpeg'
-import photo9 from '../assets/gallery/photos/image00021.jpeg'
-import photo10 from '../assets/gallery/photos/image00010.jpg'
-import photo11 from '../assets/gallery/photos/image00015.jpeg'
-import photo12 from '../assets/gallery/photos/image00001.jpeg'
-import photo13 from '../assets/gallery/photos/image00014.jpeg'
-import photo14 from '../assets/gallery/photos/image00023.jpg'
-import photo15 from '../assets/gallery/photos/image00007.jpg'
+import teaching from '../assets/teaching.webp'
+import photo2 from '../assets/gallery/photos/IMG_7083.webp'
+import photo3 from '../assets/gallery/photos/Screenshot.webp'
+import photo5 from '../assets/gallery/photos/Headshot.webp'
+import photo6 from '../assets/gallery/photos/IMG_1121.webp'
+import photo7 from '../assets/gallery/photos/image00016.webp'
+import photo8 from '../assets/gallery/photos/image00008.webp'
+import photo9 from '../assets/gallery/photos/image00021.webp'
+import photo10 from '../assets/gallery/photos/image00010.webp'
+import photo11 from '../assets/gallery/photos/image00015.webp'
+import photo12 from '../assets/gallery/photos/image00001.webp'
+import photo13 from '../assets/gallery/photos/image00014.webp'
+import photo14 from '../assets/gallery/photos/image00023.webp'
+import photo15 from '../assets/gallery/photos/image00007.webp'
 
 
 /* audio imports */
+/* import audio1 from '../assets/gallery/audios/filename.mp3' */ 
 
 function Gallery() {
     const photos = [
@@ -109,7 +110,7 @@ function Gallery() {
             return(
                 photos.length && (
                     <div className="popup" onClick={() => {setShowPopup(!showPopup); setImgPopup(0)}}>
-                        <img className='popupImg' src={photos[imgPopup].file} alt={photos[imgPopup].alt_Text} />
+                        <img className='popupImg' src={photos[imgPopup].file} alt={photos[imgPopup].alt_Text} loading='lazy'/>
                     </div>
                 )
             )

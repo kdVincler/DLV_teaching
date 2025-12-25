@@ -1,5 +1,5 @@
 import '../css/0Greeting.css';
-import headshot from '../assets/image00017.jpg';
+import headshot from '../assets/image00017.webp';
 
 function Greeting() {
     return (

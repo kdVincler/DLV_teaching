@@ -1,5 +1,5 @@
 import '../css/2Teaching.css'
-import teaching from '../assets/teaching.jpg'
+import teaching from '../assets/teaching.webp'
 
 function Teaching({redirect}) {
     return(
