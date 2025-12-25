@@ -7,7 +7,7 @@ function Greeting() {
         {/* greeting not done yet */}
         <section className="tile greeting">
             <div className="text">
-                <h1>
+                <h1 className='pt-4 pb-4'>
                     Flautist & Teacher
                 </h1>
                 <p>
